@@ -58,7 +58,8 @@ fastboot reboot
 adb shell
 su
 ```
-#### 🔹 Using Root Checker Application and Magisk
+#### 🔹 Using Root Checker Application
+<p align="center"> <img src="images/Root Checker Application.jpg" width="250"> </p>
 
 ---
 
