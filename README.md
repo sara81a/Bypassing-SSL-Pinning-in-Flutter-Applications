@@ -1,4 +1,4 @@
-# 🔐 Bypassing SSL Pinning in Android Applications using Frida & Burp Suite
+# 🔐 Bypassing SSL Pinning in Flutter Applications using Frida & Burp Suite
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge">
