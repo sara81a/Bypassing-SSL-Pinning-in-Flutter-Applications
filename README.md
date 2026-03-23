@@ -148,40 +148,14 @@ Settings → Security → Install CA Certificate
 
 ---
 
-## ✅ 8. Validate Setup
-
-Open:
-
-```bash
-http://example.com
-```
-
-✔ Request should appear in Burp
-
-⚠️ Google/Chrome will fail (certificate pinning)
-
----
 
 # 🔥 SSL Pinning Bypass (Frida)
 
 ## 📜 Script
 
-```javascript
-Java.perform(function () {
-    console.log("[*] Starting SSL bypass");
+The Frida script used for bypassing SSL pinning is included in this repository:
 
-    var addr = Module.findExportByName(null, "SSL_set_custom_verify");
-    if (addr) {
-        Interceptor.attach(addr, {
-            onEnter: function (args) {
-                args[1] = ptr(0);
-                console.log("[+] SSL bypass applied");
-            }
-        });
-    }
-});
-```
-
+👉 `script.js`
 ---
 
 ## ▶️ Run Script
@@ -189,4 +163,4 @@ Java.perform(function () {
 ### Spawn (Recommended)
 
 ```bash
-frida -U -f com.target.a
+frida -U -f com.target.app -l script.js
