@@ -32,19 +32,15 @@ This repository demonstrates a complete workflow for:
 
 ---
 
-## 📺 References
-
-* https://youtu.be/OKchbGX4hrM
-* https://youtu.be/Hvk6k0XmI9k
-
----
-
 # ⚙️ Setup Guide
 
 ---
 
 ## 🔓 1. Root Android Device (Magisk)
+Root access is required in this setup to enable Frida instrumentation and full control over the application runtime.
 
+The device was rooted using Magisk.
+### 🔧 Steps (High-Level)
 * Enable Developer Options
 * Enable USB Debugging & OEM Unlock
 * Unlock bootloader (this wipes data)
@@ -59,10 +55,12 @@ fastboot reboot
 
 ### ✅ Verify Root
 
+#### 🔹 Using ADB
 ```bash
 adb shell
 su
 ```
+#### 🔹 Using Root Checker Application and Magisk
 
 ---
 
