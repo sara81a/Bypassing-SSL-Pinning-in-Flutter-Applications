@@ -59,8 +59,7 @@ adb shell
 su
 ```
 #### 🔹 Using Root Checker Application
-<p align="center"> <img src="Root Checker Application.jpg" width="250"> </p>
-
+<img src="Root Checker Application.jpeg" width="250">
 ---
 
 ## 🧪 2. Install Frida (Kali Linux)
