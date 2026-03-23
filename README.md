@@ -165,7 +165,7 @@ The Frida script used for bypassing SSL pinning is included in this repository:
 
 ```bash
 frida -U -f com.target.app -l script.js
-
+---
 ## 📊 Result
 
 After applying the Frida bypass, HTTPS traffic from the target application is successfully intercepted in Burp Suite.
