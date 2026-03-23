@@ -116,9 +116,10 @@ frida-ps -U
 
 * Proxy Listener:
 
-  * IP → 0.0.0.0
+  * IP → Your local machine IP
   * Port → 8080
-
+> Note: Enable "Support invisible proxying"
+<img src="Root Checker Application.jpeg" width="250">
 ---
 
 ## 🔑 6. Install Burp Certificate
