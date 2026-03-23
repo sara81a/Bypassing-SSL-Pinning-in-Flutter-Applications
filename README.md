@@ -59,7 +59,7 @@ adb shell
 su
 ```
 #### 🔹 Using Root Checker Application
-<p align="center"> <img src="images/Root Checker Application.jpg" width="250"> </p>
+<p align="center"> <img src="Root Checker Application.jpg" width="250"> </p>
 
 ---
 
