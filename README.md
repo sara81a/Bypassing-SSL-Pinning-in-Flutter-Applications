@@ -1,5 +1,3 @@
-# Bypassing-SSL-Pinning-in-Flutter-Applications
-# Bypassing SSL-Pinning in Android Applications
 # 🔐 Bypassing SSL Pinning in Android Applications using Frida & Burp Suite
 
 <p align="center">
