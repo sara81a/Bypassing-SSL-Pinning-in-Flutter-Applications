@@ -158,7 +158,7 @@ Settings → Security → Install CA Certificate
 The Frida script used for bypassing SSL pinning is included in this repository:
 
 👉 `script.js`
-> Note: Replace PROXY_IP with Your local machine IP "
+> Note: Replace "PROXY_IP" with Your local machine IP 
 ---
 
 ## ▶️ Run Script
