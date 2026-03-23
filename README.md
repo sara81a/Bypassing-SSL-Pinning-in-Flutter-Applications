@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This repository demonstrates a complete workflow for:
 
@@ -21,12 +21,12 @@ This repository demonstrates a complete workflow for:
 
 ---
 
-## 🧰 Tools Used
+## Tools Used
 
-* 🛠️ Frida
-* 🌐 Burp Suite
-* 📱 Android Device (Rooted with Magisk)
-* 🔌 ADB & Fastboot
+* Frida
+* Burp Suite
+* Android Device (Rooted with Magisk)
+* ADB & Fastboot
 
 ---
 
@@ -34,11 +34,11 @@ This repository demonstrates a complete workflow for:
 
 ---
 
-## 🔓 1. Root Android Device (Magisk)
+## 1. Root Android Device (Magisk)
 Root access is required in this setup to enable Frida instrumentation and full control over the application runtime.
 
 The device was rooted using Magisk.
-### 🔧 Steps (High-Level)
+### Steps (High-Level)
 * Enable Developer Options
 * Enable USB Debugging & OEM Unlock
 * Unlock bootloader (this wipes data)
@@ -51,7 +51,7 @@ fastboot flash boot magisk_patched.img
 fastboot reboot
 ```
 
-### ✅ Verify Root
+### Verify Root
 
 #### 🔹 Using ADB
 ```bash
@@ -63,7 +63,7 @@ su
 
 ---
 
-## 🧪 2. Install Frida (Kali Linux)
+## 2. Install Frida (Kali Linux)
 
 ```bash
 pip install frida-tools
@@ -72,7 +72,7 @@ frida --version
 
 ---
 
-## 📲 3. Install Frida Server on Android
+## 3. Install Frida Server on Android
 🔹 Download Frida Server
 
 Download from:
@@ -99,13 +99,13 @@ chmod 755 /data/local/tmp/frida-server
 
 ---
 
-## 🚀 4. Start Frida Server
+##  4. Start Frida Server
 
 ```bash
 /data/local/tmp/frida-server &
 ```
 
-✅ Verify
+ Verify
 
 ```bash
 frida-ps -U
@@ -113,7 +113,7 @@ frida-ps -U
 
 ---
 
-## 🌐 5. Configure Burp Suite
+## 5. Configure Burp Suite
 
 * Proxy Listener:
 
@@ -124,7 +124,7 @@ frida-ps -U
 
 ---
 
-## 🔑 6. Install Burp Certificate
+## 6. Install Burp Certificate
 
 * Export as `.der`
 * Install on Android:
@@ -137,7 +137,7 @@ Settings → Security → Install CA Certificate
 
 ---
 
-## 📡 7. Configure Proxy
+## 7. Configure Proxy
 
 ### Option 1 — WiFi
 
@@ -151,9 +151,9 @@ Settings → Security → Install CA Certificate
 ---
 
 
-# 🔥 SSL Pinning Bypass (Frida)
+# SSL Pinning Bypass (Frida)
 
-## 📜 Script
+## Script
 
 The Frida script used for bypassing SSL pinning is included in this repository:
 
@@ -170,7 +170,7 @@ frida -U -f com.target.app -l script.js
 ```
 ---
 
-## 📊 Result
+## Result
 
 After applying the Frida bypass, HTTPS traffic from the target application is successfully intercepted in Burp Suite.
 
