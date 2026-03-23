@@ -72,9 +72,25 @@ frida --version
 ---
 
 ## 📲 3. Install Frida Server on Android
+🔹 Download Frida Server
+
+Download from:
+https://github.com/frida/frida/releases
+
+(Select version matching your device architecture — e.g., arm64)
+
+🔹 Extract & Prepare
 
 ```bash
+xz -d frida-server-*.xz
+mv frida-server-* frida-server
+```
+🔹 Push to Device
+```bash
 adb push frida-server /data/local/tmp/
+```
+🔹 Set Permissions
+```bash
 adb shell
 su
 chmod 755 /data/local/tmp/frida-server
@@ -88,7 +104,7 @@ chmod 755 /data/local/tmp/frida-server
 /data/local/tmp/frida-server &
 ```
 
-Verify:
+✅ Verify
 
 ```bash
 frida-ps -U
