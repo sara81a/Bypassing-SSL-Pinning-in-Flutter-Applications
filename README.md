@@ -156,6 +156,7 @@ Settings → Security → Install CA Certificate
 The Frida script used for bypassing SSL pinning is included in this repository:
 
 👉 `script.js`
+> Note: Replace PROXY_IP with Your local machine IP "
 ---
 
 ## ▶️ Run Script
@@ -164,3 +165,9 @@ The Frida script used for bypassing SSL pinning is included in this repository:
 
 ```bash
 frida -U -f com.target.app -l script.js
+
+## 📊 Result
+
+After applying the Frida bypass, HTTPS traffic from the target application is successfully intercepted in Burp Suite.
+
+Requests and responses can now be inspected and modified during testing.
