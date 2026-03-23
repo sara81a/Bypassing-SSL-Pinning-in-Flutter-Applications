@@ -167,7 +167,7 @@ The Frida script used for bypassing SSL pinning is included in this repository:
 
 ```bash
 frida -U -f com.target.app -l script.js
-
+```
 ---
 
 ## 📊 Result
